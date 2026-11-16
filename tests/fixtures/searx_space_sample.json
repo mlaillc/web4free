@@ -1,0 +1,294 @@
+{
+ "metadata": {
+  "timestamp": 1794841744,
+  "ips": {
+   "167.235.158.251": {
+    "reverse": "check.searx.space.",
+    "field_type": "A",
+    "asn_cidr": "167.235.0.0/16",
+    "reverse_error": null,
+    "whois_error": null
+   },
+   "2a01:4f8:1c1c:8fc2::1": {
+    "reverse": null,
+    "field_type": "AAAA",
+    "asn_cidr": "2a01:4f8::/32",
+    "reverse_error": null,
+    "whois_error": null
+   }
+  },
+  "ipv6": true
+ },
+ "instances": {
+  "https://etsi.me/": {
+   "network_type": "normal",
+   "analytics": false,
+   "version": "2026.9.22+019460e07",
+   "http": {
+    "status_code": 200,
+    "error": null,
+    "grade": "A+",
+    "gradeUrl": "https://observatory.mozilla.org/analyze/etsi.me",
+    "score": 110
+   },
+   "tls": {
+    "grade": "A+"
+   },
+   "html": {
+    "grade": "C"
+   },
+   "uptime": {
+    "uptimeDay": 100.0,
+    "uptimeWeek": 100.0,
+    "uptimeMonth": 100.0,
+    "uptimeYear": 99.87
+   },
+   "main": true,
+   "timing": {
+    "search": {
+     "success_percentage": 100.0
+    }
+   }
+  },
+  "https://searx.oloke.xyz/": {
+   "network_type": "normal",
+   "analytics": false,
+   "version": "2026.11.15+2d500cb6b",
+   "http": {
+    "status_code": 200,
+    "error": null,
+    "grade": "A+",
+    "gradeUrl": "https://observatory.mozilla.org/analyze/searx.oloke.xyz",
+    "score": 110
+   },
+   "tls": {
+    "grade": "A+"
+   },
+   "html": {
+    "grade": "V"
+   },
+   "uptime": {
+    "uptimeDay": 100.0,
+    "uptimeWeek": 100.0,
+    "uptimeMonth": 100.0,
+    "uptimeYear": 99.94
+   },
+   "main": true,
+   "timing": {
+    "search": {
+     "success_percentage": 100.0
+    }
+   }
+  },
+  "https://www.isci.si/": {
+   "network_type": "normal",
+   "analytics": false,
+   "version": "2026.11.15+f89ad129c",
+   "http": {
+    "status_code": 200,
+    "error": null,
+    "grade": "A+",
+    "gradeUrl": "https://observatory.mozilla.org/analyze/www.isci.si",
+    "score": 155
+   },
+   "tls": {
+    "grade": "A+"
+   },
+   "html": {
+    "grade": "C"
+   },
+   "uptime": {
+    "uptimeDay": 100.0,
+    "uptimeWeek": 95.88,
+    "uptimeMonth": 99.05,
+    "uptimeYear": 99.06
+   },
+   "main": true,
+   "timing": {
+    "search": {
+     "success_percentage": 100.0
+    }
+   }
+  },
+  "https://searx.dresden.network/": {
+   "network_type": "normal",
+   "analytics": false,
+   "version": "2026.11.15+2d500cb6b",
+   "http": {
+    "status_code": 200,
+    "error": null,
+    "grade": "C",
+    "gradeUrl": "https://observatory.mozilla.org/analyze/searx.dresden.network",
+    "score": 55
+   },
+   "tls": {
+    "grade": "F"
+   },
+   "html": {
+    "grade": "V"
+   },
+   "uptime": {
+    "uptimeDay": 100.0,
+    "uptimeWeek": 100.0,
+    "uptimeMonth": 100.0,
+    "uptimeYear": 99.7
+   },
+   "main": true,
+   "timing": {
+    "search": {
+     "success_percentage": 100.0
+    }
+   }
+  },
+  "https://searx.githo.st/": {
+   "network_type": "normal",
+   "analytics": false,
+   "version": "2026.11.15+2d500cb6b",
+   "http": {
+    "status_code": 200,
+    "error": null,
+    "grade": "A+",
+    "gradeUrl": "https://observatory.mozilla.org/analyze/searx.githo.st",
+    "score": 110
+   },
+   "tls": {
+    "grade": "?"
+   },
+   "html": {
+    "grade": "V"
+   },
+   "uptime": {
+    "uptimeDay": 100.0,
+    "uptimeWeek": 100.0,
+    "uptimeMonth": 95.85,
+    "uptimeYear": 96.58
+   },
+   "main": true,
+   "timing": {
+    "search": {
+     "success_percentage": 100.0
+    }
+   }
+  },
+  "https://searx.party/": {
+   "network_type": "normal",
+   "analytics": false,
+   "version": "2026.11.15+2d500cb6b",
+   "http": {
+    "status_code": 200,
+    "error": null,
+    "grade": "A+",
+    "gradeUrl": "https://observatory.mozilla.org/analyze/searx.party",
+    "score": 115
+   },
+   "tls": {
+    "grade": "A+"
+   },
+   "html": {
+    "grade": "V"
+   },
+   "uptime": {
+    "uptimeDay": 100.0,
+    "uptimeWeek": 100.0,
+    "uptimeMonth": 96.53,
+    "uptimeYear": 97.67
+   },
+   "main": true,
+   "timing": {
+    "search": {
+     "success_percentage": 0.0
+    }
+   }
+  },
+  "https://priv.au/": {
+   "network_type": "normal",
+   "analytics": false,
+   "version": "2026.11.16+bec288866",
+   "http": {
+    "status_code": 200,
+    "error": null,
+    "grade": "A+",
+    "gradeUrl": "https://observatory.mozilla.org/analyze/priv.au",
+    "score": 125
+   },
+   "tls": {
+    "grade": "A+"
+   },
+   "html": {
+    "grade": "F"
+   },
+   "uptime": {
+    "uptimeDay": 100.0,
+    "uptimeWeek": 100.0,
+    "uptimeMonth": 100.0,
+    "uptimeYear": 99.76
+   },
+   "main": true,
+   "timing": {
+    "search": {
+     "success_percentage": 100.0
+    }
+   }
+  },
+  "https://opnxng.com/": {
+   "network_type": "normal",
+   "analytics": false,
+   "version": "2026.11.15+f89ad129c",
+   "http": {
+    "status_code": 200,
+    "error": null,
+    "grade": "A+",
+    "gradeUrl": "https://observatory.mozilla.org/analyze/opnxng.com",
+    "score": 115
+   },
+   "tls": {
+    "grade": "?"
+   },
+   "html": {
+    "grade": "F"
+   },
+   "uptime": {
+    "uptimeDay": 92.51,
+    "uptimeWeek": 95.06,
+    "uptimeMonth": 98.86,
+    "uptimeYear": 99.07
+   },
+   "main": true,
+   "timing": {
+    "search": {
+     "success_percentage": 40.0
+    }
+   }
+  },
+  "https://search.serpensin.com/": {
+   "network_type": "normal",
+   "analytics": false,
+   "version": "2026.11.15+2d500cb6b",
+   "http": {
+    "status_code": 200,
+    "error": null,
+    "grade": "A+",
+    "gradeUrl": "https://observatory.mozilla.org/analyze/search.serpensin.com",
+    "score": 115
+   },
+   "uptime": {
+    "uptimeDay": 100.0,
+    "uptimeWeek": 100.0,
+    "uptimeMonth": 100.0,
+    "uptimeYear": 98.81
+   },
+   "main": true,
+   "timing": {
+    "search": {
+     "success_percentage": 100.0
+    }
+   },
+   "html": {
+    "grade": "V"
+   },
+   "tls": {
+    "grade": "A+"
+   }
+  }
+ }
+}
