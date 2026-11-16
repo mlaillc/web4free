@@ -9,6 +9,41 @@ description: Free web search from the shell with the `w4f` CLI. No account or AP
 
 `web4free` and `w4f` are the same command.
 
+## Examples
+
+```sh
+# Web search (text is the default command)
+w4f "rust async runtimes"
+w4f -v "rust async runtimes"                          # also show each provider attempt on stderr
+w4f text -m 20 -t m "sqlite wal mode"                 # 20 results from the last month
+w4f text --strategy fuse "sqlite wal mode"            # several providers at once, results merged
+w4f text -j -m 5 "postgres logical replication"       # JSON, for scripts and agents
+w4f text -i wikipedia "Ada Lovelace"                  # one provider only
+w4f text -o results.csv "open source vector databases"  # write a file (.json .jsonl .csv .md)
+
+# News
+w4f news -t d -v "electric vehicles"                  # from the last day
+w4f news --sort date "chip export rules"              # newest first
+w4f news -r de-de -t w "Bundestag Haushalt"           # German news from the last week
+w4f news -i hackernews "sqlite"                       # Hacker News stories
+
+# Images
+w4f images --size large "red panda"
+w4f images --type transparent --color blue "rocket icon"
+w4f images --license modify -i openverse,wikimedia "lighthouse"   # images you can reuse
+
+# Videos
+w4f videos --duration short "how to tie a bowline"
+w4f videos --resolution high -t m "aurora timelapse"
+
+# Providers, health, config
+w4f providers -l                                      # providers with limits and privacy notes
+w4f providers -c videos                               # providers for one category, with state
+w4f stats -e 20                                       # local stats, cooldowns, last 20 attempts
+w4f probe -c news                                     # one live test search per provider (slow)
+w4f config show                                       # effective settings
+```
+
 ## Check that it is installed
 
 ```sh
@@ -23,7 +58,7 @@ If the shell says `command not found`:
 
 ## Rules for agents
 
-1. **Always write the subcommand.** Use `w4f text "..."`, not `w4f "..."`. If the first word of the query is a command name (`text`, `news`, `images`, `videos`, `providers`, `stats`, `probe`, `searxng`, `config`), `w4f` runs that command. Example: `w4f news about rust` is a news search for "about rust", and `w4f config nginx` fails with `No such command`.
+1. **Quote the query, and write the subcommand.** Use `w4f text "rust async runtimes"`. The short form `w4f "rust async runtimes"` is also a web search. Without quotes, `w4f` reads the first word as a command when it is a command name (`text`, `news`, `images`, `videos`, `providers`, `stats`, `probe`, `searxng`, `config`). Example: `w4f news about rust` is a news search for "about rust", not a web search for "news about rust". A one-word query that is a command name runs that command even with quotes, so write `w4f text "news"`.
 2. **Use `-j` (JSON) when you parse the output.** JSON goes to stdout. Notes and diagnostics go to stderr.
 3. **Check the exit code.** 0 = results. 1 = no results or a setup error. 2 = usage error.
 4. **Do not put secrets or private data in queries.** Every provider sees the query and the IP address.
@@ -229,7 +264,7 @@ Attempt lines look like this:
 | Symptom | Cause | Action |
 |---|---|---|
 | `command not found: w4f` | Not installed or not on PATH | See "Check that it is installed" |
-| A different command ran, or `Error: missing query`, or `No such command` | The first query word is a command name | Write the subcommand: `w4f text "..."` |
+| A different command ran, or `Error: missing query`, or `No such command` | The query was not quoted, or the whole query is one command name | Quote the query and write the subcommand: `w4f text "..."` |
 | `No such option` and the query starts with `-` | The query was read as an option | Put `--` before the query |
 | Exit 2, `unknown provider(s): ...` | A name in `-i` or `-x` is wrong | Use a name from the error message or from `w4f providers` |
 | `web4free: no provider supports this request (check --include/--exclude and filters)` | The `-i` providers do not support this category, or `-x` removed all of them | Run `w4f providers -c <category>` and pick providers from that list |
